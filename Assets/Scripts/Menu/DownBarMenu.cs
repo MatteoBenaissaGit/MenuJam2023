@@ -32,6 +32,18 @@ namespace Menu
             _baseLittleScale = _littleBar.transform.localScale;
         }
 
+        protected override void Start()
+        {
+            base.Start();
+            //complete
+            MenuAsset.MenuImagesList.ForEach(x => x.DOComplete());
+            MenuAsset.MenuTextList.ForEach(x => x.DOComplete());
+
+            //fade to 0
+            MenuAsset.MenuImagesList.ForEach(x => x.DOFade(0,DisappearTime));
+            MenuAsset.MenuTextList.ForEach(x => x.DOFade(0,DisappearTime));
+        }
+
         protected override void Update()
         {
             base.Update();

@@ -3,23 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="50978568-add1-4c7d-b27d-ac370e7df493" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MenuJam2023/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MenuJam2023/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Font/DefaultSans-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Font/DefaultSans-Regular SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Inputs/MenuInputs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inputs/MenuInputs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Inputs/MenuInputs.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inputs/MenuInputs.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MenuScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buttons/MenuHorizontalCardButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buttons/MenuHorizontalOverlayButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buttons/MenuHorizontalCardButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buttons/MenuHorizontalOverlayButton.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buttons/MenuTextButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buttons/MenuTextButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buttons/MenuVerticalButtonTextController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buttons/MenuVerticalButtonTextController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/MenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/MenuManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/MenuVerticalController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/MenuVerticalController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/SubHorizontalMenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/SubHorizontalMenuController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/DownBarMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/DownBarMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,10 +74,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="33064">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="33064" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -108,7 +94,8 @@
       <option name="presentableId" value="Default" />
       <updated>1679476126531</updated>
       <workItem from="1679476129269" duration="15975000" />
-      <workItem from="1679507950387" duration="7012000" />
+      <workItem from="1679507950387" duration="7612000" />
+      <workItem from="1679523390740" duration="154000" />
     </task>
     <servers />
   </component>
