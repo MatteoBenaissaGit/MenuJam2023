@@ -13,7 +13,7 @@ namespace Menu
         private Transform _logoTransform;
 
         //privates
-        private List<MenuHorizontalCardButton> _horizontalCardsButtonList = new List<MenuHorizontalCardButton>();
+        private List<MenuHorizontalOverlayButton> _horizontalCardsButtonList = new List<MenuHorizontalOverlayButton>();
         private Vector3 _baseLogoPosition;
 
         private void Awake()
@@ -23,7 +23,7 @@ namespace Menu
             //list
             foreach (MenuButton button in ButtonList)
             {
-                _horizontalCardsButtonList.Add(button.GetComponent<MenuHorizontalCardButton>());
+                _horizontalCardsButtonList.Add(button.GetComponent<MenuHorizontalOverlayButton>());
             }
         }
 
@@ -40,6 +40,9 @@ namespace Menu
             _logoTransform.DOComplete();
             _logoTransform.GetComponent<Image>().DOFade(1, AppearTime);
             _logoTransform.position = _baseLogoPosition;
+            
+            //all menus manager
+            AllMenusManager.Instance.CurrentMenu = this;
             
             SetSelected();
         }

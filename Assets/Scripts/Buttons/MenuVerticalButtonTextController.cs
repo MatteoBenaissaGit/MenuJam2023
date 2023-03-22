@@ -4,6 +4,11 @@ namespace Buttons
 {
     public class MenuVerticalButtonTextController : MenuTextButton
     {
+        protected override void Awake()
+        {
+            base.Awake();
+        }
+
         public override void Select()
         {
             base.Select();

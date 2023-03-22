@@ -7,7 +7,7 @@ namespace Buttons
     {
         [HideInInspector] public TMP_Text Text;
 
-        protected virtual void Start()
+        protected virtual void Awake()
         {
             Text = GetComponent<TMP_Text>();
             if (Text == null)

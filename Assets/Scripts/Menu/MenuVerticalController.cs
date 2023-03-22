@@ -36,6 +36,8 @@ namespace Menu
 
         protected override void Start()
         {
+            base.Start();
+            
             IsActive = true;
             _selectLineBasePosition = _selectLine.anchoredPosition;
             SetSelected();
@@ -44,13 +46,21 @@ namespace Menu
         protected override void Update()
         {
             base.Update();
-            HandleSelection(InputManager.Instance.Inputs.Up,InputManager.Instance.Inputs.Down);
+
+            if (IsActive)
+            {
+                HandleSelection(InputManager.Instance.Inputs.Up,InputManager.Instance.Inputs.Down);
+            }
         }
 
         protected override void SetSelected()
         {
             //text
-            _verticalButtonsTextList.ForEach(x => x.Text.color = _baseColor);
+            //_verticalButtonsTextList.ForEach(x => x.Text.color = _baseColor);
+            foreach (var button in _verticalButtonsTextList)
+            {
+                button.Text.color = _baseColor;
+            }
             _verticalButtonsTextList[SelectionIndex].Text.color = _selectedColor;
         
             //line
@@ -62,6 +72,9 @@ namespace Menu
         {
             base.ShowMenu();
             _logo.DOFade(1, AppearTime * 2);
+            
+            //all menus manager
+            AllMenusManager.Instance.CurrentMenu = this;
         }
 
         public override void HideMenu()

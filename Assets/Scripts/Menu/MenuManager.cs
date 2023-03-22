@@ -17,7 +17,7 @@ namespace Menu
     
         [ReadOnly, SerializeField] protected int SelectionIndex;
         [ReadOnly, SerializeField] public bool HasPressed;
-        [ReadOnly, SerializeField] protected bool IsActive;
+        [ReadOnly, SerializeField] public bool IsActive;
         private bool _hasPressedEscapeAtStart;
 
         protected virtual void Start()
@@ -26,6 +26,7 @@ namespace Menu
             {
                 case true:
                     ShowMenu();
+                    AllMenusManager.Instance.CurrentMenu = this;
                     break;
                 case false:
                     HideMenu();
@@ -41,6 +42,18 @@ namespace Menu
             if (IsActive)
             {
                 HandleGoBack();
+                CheckPressed();
+            }
+        }
+
+        protected void CheckPressed()
+        {
+            if (HasPressed)
+            {
+                if (InputManager.Instance.Inputs is { Down: false, Up: false, Right: false, Left: false, Select: false, DownMenu: false })
+                {
+                    HasPressed = false;
+                }
             }
         }
 
@@ -54,7 +67,10 @@ namespace Menu
             if (InputManager.Instance.Inputs.GoBack && _hasPressedEscapeAtStart == false && MenuToGoBack != null)
             {
                 HideMenu();
-                MenuToGoBack.ShowMenu();
+                if (MenuToGoBack != null)
+                {
+                    MenuToGoBack.ShowMenu();
+                }
                 _hasPressedEscapeAtStart = true;
             }
         }
@@ -115,12 +131,9 @@ namespace Menu
         
             Input input = InputManager.Instance.Inputs;
         
+            CheckPressed();
             if (HasPressed)
             {
-                if (input is { Down: false, Up: false, Right: false, Left: false, Select: false })
-                {
-                    HasPressed = false;
-                }
                 return;
             }
 

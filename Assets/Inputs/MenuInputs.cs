@@ -80,6 +80,15 @@ public partial class @MenuInputs : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""DownMenu"",
+                    ""type"": ""Button"",
+                    ""id"": ""c2fd06a6-ced1-4668-8fec-b22e067a0607"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -148,6 +157,17 @@ public partial class @MenuInputs : IInputActionCollection2, IDisposable
                     ""action"": ""GoBack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d75fa035-ed68-4787-980d-3af204d9577f"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DownMenu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -162,6 +182,7 @@ public partial class @MenuInputs : IInputActionCollection2, IDisposable
         m_Selection_Right = m_Selection.FindAction("Right", throwIfNotFound: true);
         m_Selection_Select = m_Selection.FindAction("Select", throwIfNotFound: true);
         m_Selection_GoBack = m_Selection.FindAction("GoBack", throwIfNotFound: true);
+        m_Selection_DownMenu = m_Selection.FindAction("DownMenu", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -227,6 +248,7 @@ public partial class @MenuInputs : IInputActionCollection2, IDisposable
     private readonly InputAction m_Selection_Right;
     private readonly InputAction m_Selection_Select;
     private readonly InputAction m_Selection_GoBack;
+    private readonly InputAction m_Selection_DownMenu;
     public struct SelectionActions
     {
         private @MenuInputs m_Wrapper;
@@ -237,6 +259,7 @@ public partial class @MenuInputs : IInputActionCollection2, IDisposable
         public InputAction @Right => m_Wrapper.m_Selection_Right;
         public InputAction @Select => m_Wrapper.m_Selection_Select;
         public InputAction @GoBack => m_Wrapper.m_Selection_GoBack;
+        public InputAction @DownMenu => m_Wrapper.m_Selection_DownMenu;
         public InputActionMap Get() { return m_Wrapper.m_Selection; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -264,6 +287,9 @@ public partial class @MenuInputs : IInputActionCollection2, IDisposable
                 @GoBack.started -= m_Wrapper.m_SelectionActionsCallbackInterface.OnGoBack;
                 @GoBack.performed -= m_Wrapper.m_SelectionActionsCallbackInterface.OnGoBack;
                 @GoBack.canceled -= m_Wrapper.m_SelectionActionsCallbackInterface.OnGoBack;
+                @DownMenu.started -= m_Wrapper.m_SelectionActionsCallbackInterface.OnDownMenu;
+                @DownMenu.performed -= m_Wrapper.m_SelectionActionsCallbackInterface.OnDownMenu;
+                @DownMenu.canceled -= m_Wrapper.m_SelectionActionsCallbackInterface.OnDownMenu;
             }
             m_Wrapper.m_SelectionActionsCallbackInterface = instance;
             if (instance != null)
@@ -286,6 +312,9 @@ public partial class @MenuInputs : IInputActionCollection2, IDisposable
                 @GoBack.started += instance.OnGoBack;
                 @GoBack.performed += instance.OnGoBack;
                 @GoBack.canceled += instance.OnGoBack;
+                @DownMenu.started += instance.OnDownMenu;
+                @DownMenu.performed += instance.OnDownMenu;
+                @DownMenu.canceled += instance.OnDownMenu;
             }
         }
     }
@@ -298,5 +327,6 @@ public partial class @MenuInputs : IInputActionCollection2, IDisposable
         void OnRight(InputAction.CallbackContext context);
         void OnSelect(InputAction.CallbackContext context);
         void OnGoBack(InputAction.CallbackContext context);
+        void OnDownMenu(InputAction.CallbackContext context);
     }
 }

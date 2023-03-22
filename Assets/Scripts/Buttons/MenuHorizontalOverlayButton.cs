@@ -6,11 +6,13 @@ using UnityEngine.UI;
 
 namespace Buttons
 {
-    public class MenuHorizontalCardButton : MenuButton
+    public class MenuHorizontalOverlayButton : MenuButton
     {
         [SerializeField] public Overlay Overlay;
+        [SerializeField] private float _sizeMultiplier = 1.05f;
 
         private Vector3 _baseScale;
+        
 
         private void Start()
         {
@@ -22,7 +24,7 @@ namespace Buttons
         {
             Overlay.Fade(1, 0.5f);
             transform.DOComplete();
-            transform.DOScale(_baseScale * 1.05f, 0.5f);
+            transform.DOScale(_baseScale * _sizeMultiplier, 0.5f);
         }
 
         public void SetUnselected()
@@ -39,6 +41,9 @@ namespace Buttons
         public Image OverlayImage;
         public Image OverlayEnter;
         public TMP_Text OverlayText;
+        public bool ChangeColor;
+        public Color SelectedColor;
+        public Color BaseColor;
 
         public void Fade(float value, float time)
         {
@@ -56,8 +61,15 @@ namespace Buttons
 
             if (OverlayText != null)
             {
-                OverlayText.DOComplete();
-                OverlayText.DOFade(value, time);
+                if (ChangeColor == false)
+                {
+                    OverlayText.DOComplete();
+                    OverlayText.DOFade(value, time);
+                }
+                else
+                {
+                    OverlayText.color = value == 0 ? BaseColor : SelectedColor;
+                }
             }
         }
     }
