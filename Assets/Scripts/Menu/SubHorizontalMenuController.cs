@@ -30,7 +30,10 @@ namespace Menu
         protected override void Update()
         {
             base.Update();
-            HandleSelection(InputManager.Instance.Inputs.Left,InputManager.Instance.Inputs.Right);
+            if (IsActive)
+            {
+                HandleSelection(InputManager.Instance.Inputs.Left,InputManager.Instance.Inputs.Right);
+            }
         }
 
         public override void ShowMenu()

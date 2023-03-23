@@ -60,10 +60,12 @@ namespace Menu
                 {
                     HideMenu();
                     AllMenusManager.Instance.CurrentMenu.HasPressed = true;
+                    AllMenusManager.Instance.CurrentMenu.IsActive = true;
                 }
                 else
                 {
                     ShowMenu();
+                    AllMenusManager.Instance.CurrentMenu.IsActive = false;
                 }
                 HasPressed = true;
             }
