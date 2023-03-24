@@ -90,6 +90,9 @@ namespace Menu
             MenuAsset.MenuImagesList.ForEach(x => x.DOFade(1,AppearTime * Random.Range(0.5f,2f)));
             MenuAsset.MenuTextList.ForEach(x => x.DOFade(1,AppearTime * Random.Range(0.5f,2f)));
             IsActive = true;
+            
+            //audio
+            SoundManager.Instance.PlaySound(SoundManager.Instance.ChangeMenu);
         }
 
         public virtual void HideMenu()
@@ -110,6 +113,7 @@ namespace Menu
             {
                 HasPressed = true;
                 SelectionIndex++;
+                SoundManager.Instance.PlaySound(SoundManager.Instance.Move);
             }
         }
     
@@ -119,6 +123,7 @@ namespace Menu
             {
                 HasPressed = true;
                 SelectionIndex--;
+                SoundManager.Instance.PlaySound(SoundManager.Instance.Move);
             }
         }
     

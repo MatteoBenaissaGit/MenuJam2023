@@ -26,6 +26,7 @@ public class LoadingScreen : MonoBehaviour
             _icon.DOFade(0, 1f);
             AllMenusManager.Instance.CurrentMenu.IsActive = true;
             _isLoaded = true;
+            SoundManager.Instance.PlayMusic(SoundManager.Instance.Music);
         }
         else if (AllMenusManager.Instance.CurrentMenu != null && _isLoaded == false)
         {

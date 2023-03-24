@@ -1,4 +1,5 @@
-﻿using Menu;
+﻿using DG.Tweening;
+using Menu;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -24,6 +25,11 @@ namespace Buttons
                 MenuToLoad.ShowMenu();
                 MenuToLoad.HasPressed = true;
             }
+            else
+            {
+                transform.DOPunchPosition(new Vector3(2, 0, 0), 0.3f);
+            }
+            SoundManager.Instance.PlaySound(SoundManager.Instance.Select);
         }
     }
 }
