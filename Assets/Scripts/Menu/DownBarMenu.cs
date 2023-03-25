@@ -20,6 +20,7 @@ namespace Menu
         private List<MenuHorizontalOverlayButton> _horizontalButtonList = new List<MenuHorizontalOverlayButton>();
         private Vector3 _baseBigScale;
         private Vector3 _baseLittleScale;
+        private bool _reshowEnter;
         
         private void Awake()
         {

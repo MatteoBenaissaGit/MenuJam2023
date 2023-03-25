@@ -3,20 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="50978568-add1-4c7d-b27d-ac370e7df493" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MenuJam2023/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MenuJam2023/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Credits/AudioCredits.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Credits/AudioCredits.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Credits/VideoCredits.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Credits/VideoCredits.mp4.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/ENTER.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/ENTER.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MenuScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buttons/MenuButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buttons/MenuButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LoadingScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LoadingScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/MenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/MenuManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/DownBarMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/DownBarMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/MenuVerticalController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuVerticalController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/MenuVerticalController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuVerticalController.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +98,7 @@
       <workItem from="1679507950387" duration="7612000" />
       <workItem from="1679523390740" duration="154000" />
       <workItem from="1679568583898" duration="2032000" />
-      <workItem from="1679697016891" duration="3785000" />
+      <workItem from="1679697016891" duration="4924000" />
     </task>
     <servers />
   </component>

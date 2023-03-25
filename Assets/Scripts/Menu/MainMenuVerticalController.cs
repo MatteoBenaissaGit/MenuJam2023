@@ -2,15 +2,16 @@ using System;
 using System.Collections.Generic;
 using Buttons;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Menu
 {
-    public class MenuVerticalController : MenuManager
+    public class MainMenuVerticalController : MenuManager
     {
         //serialized fields
-        [Space(10), Header("Horizontal Menu"), SerializeField]
+        [Space(10), Header("Vertical Menu"), SerializeField]
         private Image _logo; 
         [SerializeField] 
         private RectTransform _selectLine;
@@ -20,6 +21,10 @@ namespace Menu
         private Color _baseColor;
         [SerializeField] 
         private Color _selectedColor;
+        [Header("Enter"), SerializeField] 
+        private Image _enterImage;
+        [SerializeField] 
+        private TMP_Text _enterText;
 
         //privates
         private List<MenuVerticalButtonTextController> _verticalButtonsTextList = new List<MenuVerticalButtonTextController>();
@@ -71,6 +76,7 @@ namespace Menu
         public override void ShowMenu()
         {
             base.ShowMenu();
+            SetActiveEnter();
             _logo.DOFade(1, AppearTime * 2);
             
             //all menus manager
@@ -79,8 +85,16 @@ namespace Menu
 
         public override void HideMenu()
         {
+            print("hide");
             base.HideMenu();
-            _logo.DOFade(0, DisappearTime * 2);
+            _logo.DOFade(0, DisappearTime * 2).OnComplete(SetActiveEnter);
+        }
+
+        private void SetActiveEnter()
+        {
+            bool active = _enterImage.gameObject.activeInHierarchy == false;
+            _enterImage.gameObject.SetActive(active);
+            _enterText.gameObject.SetActive(active);
         }
     }
 }

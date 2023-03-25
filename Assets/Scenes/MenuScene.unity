@@ -4370,6 +4370,8 @@ MonoBehaviour:
   _selectLineHeightChange: 66
   _baseColor: {r: 1, g: 1, b: 1, a: 1}
   _selectedColor: {r: 0.93725497, g: 0.12941177, b: 0.078431375, a: 1}
+  _enterImage: {fileID: 1925230516}
+  _enterText: {fileID: 1608911774}
 --- !u!1 &656108880
 GameObject:
   m_ObjectHideFlags: 0
@@ -10536,7 +10538,7 @@ MonoBehaviour:
   SelectionIndex: 0
   HasPressed: 0
   IsActive: 0
-  MenuToLoad: {fileID: 653119595}
+  MenuToLoad: {fileID: 0}
 --- !u!114 &1474191871 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3274767348049437222, guid: da3b517ab891cff45ac45dee64c9a727, type: 3}
@@ -11299,7 +11301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 264e7647a50667c48a9cf65fcc17074f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MenuOwner: {fileID: 653119595}
+  MenuOwner: {fileID: 0}
   MenuToLoad: {fileID: 0}
   OnSelect:
     m_PersistentCalls:
@@ -11795,7 +11797,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1608911773
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13814,7 +13816,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1925230515
 RectTransform:
   m_ObjectHideFlags: 0
