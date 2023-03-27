@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Buttons;
+using Cinemachine;
 using DG.Tweening;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -14,10 +15,12 @@ namespace Menu
         [SerializeField] protected List<MenuButton> ButtonList;
         [SerializeField] protected bool IsActiveAtStart;
         [SerializeField] protected MenuManager MenuToGoBack;
+        [SerializeField] protected CinemachineVirtualCamera CameraToSet;
     
         [ReadOnly, SerializeField] protected int SelectionIndex;
         [ReadOnly, SerializeField] public bool HasPressed;
         [ReadOnly, SerializeField] public bool IsActive;
+        [ReadOnly, SerializeField] public bool IsShown;
         private bool _hasPressedEscapeAtStart;
 
         protected virtual void Start()
@@ -85,8 +88,17 @@ namespace Menu
 
         public virtual void ShowMenu()
         {
+            IsActive = true;
+
             //escape
             _hasPressedEscapeAtStart = InputManager.Instance.Inputs.GoBack;
+            
+            //shown
+            if (IsShown)
+            {
+                return;
+            }
+            IsShown = true;
 
             //set fade to 0
             MenuAsset.MenuImagesList.ForEach(x => x.DOFade(0,0));
@@ -97,14 +109,22 @@ namespace Menu
             //fade to 1
             MenuAsset.MenuImagesList.ForEach(x => x.DOFade(1,AppearTime * Random.Range(0.5f,2f)));
             MenuAsset.MenuTextList.ForEach(x => x.DOFade(1,AppearTime * Random.Range(0.5f,2f)));
-            IsActive = true;
             
             //audio
             SoundManager.Instance.PlaySound(SoundManager.Instance.ChangeMenu);
+            
+            //Cam
+            if (CameraToSet != null)
+            {
+                CamerasManager.Instance.SetCamera(CameraToSet);
+            }
         }
 
         public virtual void HideMenu()
         {
+            IsShown = false;
+            IsActive = false;
+            
             //complete
             MenuAsset.MenuImagesList.ForEach(x => x.DOComplete());
             MenuAsset.MenuTextList.ForEach(x => x.DOComplete());
@@ -112,7 +132,6 @@ namespace Menu
             //fade to 0
             MenuAsset.MenuImagesList.ForEach(x => x.DOFade(0,DisappearTime * Random.Range(0.5f,2f)));
             MenuAsset.MenuTextList.ForEach(x => x.DOFade(0,DisappearTime * Random.Range(0.5f,2f)));
-            IsActive = false;
         }
 
         private void NextButton()
@@ -161,7 +180,7 @@ namespace Menu
                 NextButton();
             }
         
-            if (input.Select)
+            if (input.Select && IsActive)
             {
                 HasPressed = true;
                 ButtonList[SelectionIndex].Select();

@@ -10,6 +10,7 @@ namespace Buttons
     {
         [SerializeField] public Overlay Overlay;
         [SerializeField] private float _sizeMultiplier = 1.05f;
+        [SerializeField, Range(0,1)] private float _overlayTransparency = 1f;
 
         private Vector3 _baseScale;
         
@@ -22,7 +23,7 @@ namespace Buttons
 
         public void SetSelected()
         {
-            Overlay.Fade(1, 0.5f);
+            Overlay.Fade(_overlayTransparency, 0.5f);
             transform.DOComplete();
             transform.DOScale(_baseScale * _sizeMultiplier, 0.5f);
         }

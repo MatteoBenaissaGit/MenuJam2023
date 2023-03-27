@@ -17,6 +17,8 @@ namespace Menu
         private RectTransform _selectLine;
         [SerializeField] 
         private float _selectLineHeightChange;
+        [SerializeField] 
+        private DownBarMenu _downMenuManager;
         [Header("Text"), SerializeField] 
         private Color _baseColor;
         [SerializeField] 
@@ -81,11 +83,12 @@ namespace Menu
             
             //all menus manager
             AllMenusManager.Instance.CurrentMenu = this;
+            
+            _downMenuManager.SetLittleMenu(true);
         }
 
         public override void HideMenu()
         {
-            print("hide");
             base.HideMenu();
             _logo.DOFade(0, DisappearTime * 2).OnComplete(SetActiveEnter);
         }

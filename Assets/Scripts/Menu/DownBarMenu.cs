@@ -21,6 +21,7 @@ namespace Menu
         private Vector3 _baseBigScale;
         private Vector3 _baseLittleScale;
         private bool _reshowEnter;
+        private bool _newMenuIsLoaded;
         
         private void Awake()
         {
@@ -43,6 +44,9 @@ namespace Menu
             //fade to 0
             MenuAsset.MenuImagesList.ForEach(x => x.DOFade(0,DisappearTime));
             MenuAsset.MenuTextList.ForEach(x => x.DOFade(0,DisappearTime));
+            
+            //button events
+            ButtonList.ForEach(x => x.OnNewMenuLoad.AddListener(SetNewMenuLoad));
         }
 
         protected override void Update()
@@ -109,10 +113,16 @@ namespace Menu
         public override void HideMenu()
         {
             base.HideMenu();
-            
-            if (AllMenusManager.Instance.CurrentMenu != null)
+
+            if (AllMenusManager.Instance.CurrentMenu != null && _newMenuIsLoaded == false)
             {
                 AllMenusManager.Instance.CurrentMenu.IsActive = true;
+            }
+            else
+            {
+                AllMenusManager.Instance.CurrentMenu.HideMenu();
+                SetLittleMenu(false);
+                _newMenuIsLoaded = false;
             }
             
             //scale menu
@@ -136,6 +146,17 @@ namespace Menu
             base.SetSelected();
             _horizontalButtonList.ForEach(x => x.SetUnselected());
             _horizontalButtonList[SelectionIndex].SetSelected();
+        }
+
+        private void SetNewMenuLoad()
+        {
+            Debug.Log("Set new menu load");
+            _newMenuIsLoaded = true;
+        }
+
+        public void SetLittleMenu(bool isActive)
+        {
+            _littleBar.gameObject.SetActive(isActive);
         }
     }
 }

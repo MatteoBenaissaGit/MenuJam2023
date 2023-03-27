@@ -79,6 +79,8 @@ public class SideMenuVertical : MenuManager
         _sideMenu.DOMove(_basePosition, 0.5f);
         _blackBackground.DOFade(0.7f, 0.5f);
 
+        MenuToGoBack = AllMenusManager.Instance.CurrentMenu;
+
         SetSelected();
     }
 

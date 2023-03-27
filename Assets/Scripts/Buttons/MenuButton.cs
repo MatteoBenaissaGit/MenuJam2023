@@ -1,4 +1,5 @@
-﻿using DG.Tweening;
+﻿using System;
+using DG.Tweening;
 using Menu;
 using UnityEngine;
 using UnityEngine.Events;
@@ -11,12 +12,15 @@ namespace Buttons
         [SerializeField] protected MenuManager MenuToLoad;
 
         public UnityEvent OnSelect = new UnityEvent();
+        public UnityEvent OnNewMenuLoad = new UnityEvent();
 
         public virtual void Select()
         {
             OnSelect.Invoke();
             if (MenuToLoad != null)
             {
+                OnNewMenuLoad.Invoke();
+                
                 if (MenuOwner != null)
                 {
                     MenuOwner.HideMenu();
