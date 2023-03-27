@@ -23,4 +23,5 @@ public class AllMenusManager : MonoBehaviour
     #endregion
 
     public MenuManager CurrentMenu;
+    public bool IsAccountMenuShown = false, IsLittleBarShown = true;
 }

@@ -59,7 +59,8 @@ namespace Menu
                 return;
             }
 
-            if (InputManager.Instance.Inputs.DownMenu && HasPressed == false)
+            if (InputManager.Instance.Inputs.DownMenu && HasPressed == false && 
+                AllMenusManager.Instance.IsLittleBarShown && AllMenusManager.Instance.IsAccountMenuShown == false) 
             {
                 if (IsActive)
                 {
@@ -157,6 +158,7 @@ namespace Menu
         public void SetLittleMenu(bool isActive)
         {
             _littleBar.gameObject.SetActive(isActive);
+            AllMenusManager.Instance.IsLittleBarShown = isActive;
         }
     }
 }

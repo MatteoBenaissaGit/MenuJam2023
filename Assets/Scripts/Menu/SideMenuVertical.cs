@@ -81,6 +81,8 @@ public class SideMenuVertical : MenuManager
 
         MenuToGoBack = AllMenusManager.Instance.CurrentMenu;
 
+        AllMenusManager.Instance.IsAccountMenuShown = true;
+
         SetSelected();
     }
 
@@ -93,6 +95,8 @@ public class SideMenuVertical : MenuManager
         _sideMenu.DOMove(position, 0.5f);
 
         _blackBackground.DOFade(0f, 0.5f);
+        
+        AllMenusManager.Instance.IsAccountMenuShown = false;
     }
 
     protected override void SetSelected()

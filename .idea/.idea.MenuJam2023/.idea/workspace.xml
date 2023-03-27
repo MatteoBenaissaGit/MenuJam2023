@@ -3,165 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="50978568-add1-4c7d-b27d-ac370e7df493" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MenuJam2023/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MenuJam2023/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Account.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Account/AccountLinking.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Account/AccountLinking.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Account/FindSomeone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Account/FindSomeone.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Account/accountBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Account/accountBackground.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Audio.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Audio/AUDIO_ChangeMenu.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Audio/AUDIO_ChangeMenu.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Audio/AUDIO_MenuMove.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Audio/AUDIO_MenuMove.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Audio/AUDIO_MenuSelect.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Audio/AUDIO_MenuSelect.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Audio/AUDIO_MusicCredits.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Audio/AUDIO_MusicCredits.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Audio/AUDIO_MusicMain.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Audio/AUDIO_MusicMain.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/BootcampMessage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/BootcampMessage.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Campaign.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Campaign/ButtonCardOverlay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Campaign/ButtonCardOverlay.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Campaign/CampaignLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Campaign/CampaignLogo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Campaign/CardShadow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Campaign/CardShadow.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Campaign/Custombackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Campaign/Custombackground.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Campaign/NewBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Campaign/NewBackground.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Campaign/backIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Campaign/backIcon.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Credits.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Credits/CreditsRenderTexture.renderTexture" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Credits/CreditsRenderTexture.renderTexture.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Credits/VideoCreditsCrop.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Credits/VideoCreditsCrop.mp4.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar/DownBarBig.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar/DownBarBig.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar/DownBarLittle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar/DownBarLittle.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar/E.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar/E.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar/IconHelp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar/IconHelp.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar/IconNews.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar/IconNews.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar/IconOption.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar/IconOption.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar/IconStats.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar/IconStats.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar/IconStore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar/IconStore.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar/IconsOverlay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar/IconsOverlay.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar/iconCustomize.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/DownBar/iconCustomize.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/EntryMenu.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/EntryMenu/GearSelectionLine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/EntryMenu/GearSelectionLine.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/EntryMenu/NumTouches.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/EntryMenu/NumTouches.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/EntryMenu/gearsLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/EntryMenu/gearsLogo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/EntryMenu/gearsLogoWHITE.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/EntryMenu/gearsLogoWHITE.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Escape.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Escape/Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Escape/Logo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Escape/MapSharingBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Escape/MapSharingBackground.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Escape/PastHiveBackround.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Escape/PastHiveBackround.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Escape/TheHiveBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Escape/TheHiveBackground.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Example.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Example/gears-5-campaign.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Example/gears-5-campaign.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Example/gears-5-extras.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Example/gears-5-extras.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Example/gears-5-main-menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Example/gears-5-main-menu.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Example/gears-5-new-campaign.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Example/gears-5-new-campaign.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Extras.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Extras/BenchmarkBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Extras/BenchmarkBackground.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Extras/CreditsBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Extras/CreditsBackground.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Extras/PreviouslyBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Extras/PreviouslyBackground.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Extras/StateOf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Extras/StateOf.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Extras/WhiteBlockTopLeft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Extras/WhiteBlockTopLeft.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Font.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Font/DefaultSans-Regular SDF.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Font/DefaultSans-Regular SDF.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Font/DefaultSans-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Font/DefaultSans-Regular.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Font/Evogria SDF.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Font/Evogria SDF.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Font/Evogria.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Font/Evogria.otf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Horde.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Horde/HordeBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Horde/HordeBackground.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Horde/Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Horde/Logo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/LoadingScreen.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/LoadingScreen/LoadingIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/LoadingScreen/LoadingIcon.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/LoadingScreen/backgroundLoading.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/LoadingScreen/backgroundLoading.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/NewSave.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/NewSave/NewSave.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/NewSave/NewSave.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/OverlayWithEnter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/OverlayWithEnter.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/ProfileBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/ProfileBackground.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/SocialIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/SocialIcon.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TopIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TopIcon.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Touches.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Touches/SPRITE_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Touches/SPRITE_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Touches/SPRITE_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Touches/SPRITE_4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Touches/SPRITE_ENTER.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Touches/SPRITE_ENTER.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Versus.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Versus/Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Versus/Logo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Versus/QuickplayBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Versus/QuickplayBackground.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Versus/RankedBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Versus/RankedBackground.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MenuScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buttons/MenuButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buttons/MenuButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buttons/MenuOverlayButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buttons/MenuOverlayButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AllMenusManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AllMenusManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/DownBarMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/DownBarMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuVerticalController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuVerticalController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/MenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/MenuManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/SideMenuVertical.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/SideMenuVertical.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoundManager/SoundManagerPrefab.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoundManager/SoundManagerPrefab.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoundManager/SoundManagerScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoundManager/SoundManagerScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoundManager/VolumeSlider.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoundManager/VolumeSlider.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,7 +103,8 @@
       <workItem from="1679568583898" duration="2032000" />
       <workItem from="1679697016891" duration="5184000" />
       <workItem from="1679916217290" duration="4071000" />
-      <workItem from="1679947637163" duration="3804000" />
+      <workItem from="1679947637163" duration="4609000" />
+      <workItem from="1679956194550" duration="304000" />
     </task>
     <servers />
   </component>
