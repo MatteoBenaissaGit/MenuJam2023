@@ -13,7 +13,7 @@ namespace Menu
         private Transform _logoTransform;
 
         //privates
-        private List<MenuHorizontalOverlayButton> _horizontalCardsButtonList = new List<MenuHorizontalOverlayButton>();
+        private List<MenuOverlayButton> _horizontalCardsButtonList = new List<MenuOverlayButton>();
         private Vector3 _baseLogoPosition;
 
         private void Awake()
@@ -23,7 +23,7 @@ namespace Menu
             //list
             foreach (MenuButton button in ButtonList)
             {
-                _horizontalCardsButtonList.Add(button.GetComponent<MenuHorizontalOverlayButton>());
+                _horizontalCardsButtonList.Add(button.GetComponent<MenuOverlayButton>());
             }
         }
 

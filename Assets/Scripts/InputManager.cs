@@ -38,6 +38,7 @@ public class InputManager : MonoBehaviour
         Inputs.Select = _menuInputs.Selection.Select.IsPressed();
         Inputs.GoBack = _menuInputs.Selection.GoBack.IsPressed();
         Inputs.DownMenu = _menuInputs.Selection.DownMenu.IsPressed();
+        Inputs.Social = _menuInputs.Selection.Social.IsPressed();
     }
 }
 
@@ -51,4 +52,5 @@ public struct Input
     public bool Select;
     public bool GoBack;
     public bool DownMenu;
+    public bool Social;
 }

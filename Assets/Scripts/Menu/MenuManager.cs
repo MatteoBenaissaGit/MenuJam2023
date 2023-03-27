@@ -50,7 +50,15 @@ namespace Menu
         {
             if (HasPressed)
             {
-                if (InputManager.Instance.Inputs is { Down: false, Up: false, Right: false, Left: false, Select: false, DownMenu: false })
+                if (InputManager.Instance.Inputs is { 
+                        Down: false, 
+                        Up: false, 
+                        Right: false, 
+                        Left: false, 
+                        Select: false, 
+                        DownMenu: false,
+                        Social: false
+                    })
                 {
                     HasPressed = false;
                 }

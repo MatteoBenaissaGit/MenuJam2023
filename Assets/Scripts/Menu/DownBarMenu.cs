@@ -17,7 +17,7 @@ namespace Menu
         [SerializeField] private Image _blackBackground;
 
         //privates
-        private List<MenuHorizontalOverlayButton> _horizontalButtonList = new List<MenuHorizontalOverlayButton>();
+        private List<MenuOverlayButton> _horizontalButtonList = new List<MenuOverlayButton>();
         private Vector3 _baseBigScale;
         private Vector3 _baseLittleScale;
         private bool _reshowEnter;
@@ -27,7 +27,7 @@ namespace Menu
             //list
             foreach (MenuButton button in ButtonList)
             {
-                _horizontalButtonList.Add(button.GetComponent<MenuHorizontalOverlayButton>());
+                _horizontalButtonList.Add(button.GetComponent<MenuOverlayButton>());
             }
             _baseBigScale = _bigBar.transform.localScale;
             _baseLittleScale = _littleBar.transform.localScale;

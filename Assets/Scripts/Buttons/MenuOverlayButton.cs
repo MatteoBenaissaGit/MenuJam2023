@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 namespace Buttons
 {
-    public class MenuHorizontalOverlayButton : MenuButton
+    public class MenuOverlayButton : MenuButton
     {
         [SerializeField] public Overlay Overlay;
         [SerializeField] private float _sizeMultiplier = 1.05f;
