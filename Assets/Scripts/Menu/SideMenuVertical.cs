@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Buttons;
@@ -16,10 +17,14 @@ public class SideMenuVertical : MenuManager
     private Vector3 _basePosition;
     private List<MenuOverlayButton> _buttonList = new List<MenuOverlayButton>();
 
+    private void Awake()
+    {
+        _basePosition = _sideMenu.position;
+    }
+
     protected override void Start()
     {
         base.Start();
-        _basePosition = _sideMenu.position;
 
         //list
         foreach (MenuButton button in ButtonList)
@@ -68,6 +73,7 @@ public class SideMenuVertical : MenuManager
         HasPressed = true;
 
         _sideMenu.position = _basePosition + new Vector3(10, 0, 0);
+        _sideMenu.DOComplete();
         _sideMenu.DOMove(_basePosition, 0.5f);
         _blackBackground.DOFade(0.7f, 0.5f);
 
@@ -85,7 +91,8 @@ public class SideMenuVertical : MenuManager
         Vector3 position = _basePosition + new Vector3(10, 0, 0);
         _sideMenu.DOComplete();
         _sideMenu.DOMove(position, 0.5f);
-
+        _buttonList.ForEach(x => x.SetUnselected());
+        
         _blackBackground.DOFade(0f, 0.5f);
         
         AllMenusManager.Instance.IsAccountMenuShown = false;

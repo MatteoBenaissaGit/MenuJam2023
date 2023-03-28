@@ -25,7 +25,7 @@ namespace Buttons
 
         private void SetButton(bool isActive)
         {
-            _overlay.DOComplete();
+            _overlay.DOKill();
             _overlay.DOFade(isActive ? 1 : 0, 0.1f);
             if (SubMenu != null)
             {

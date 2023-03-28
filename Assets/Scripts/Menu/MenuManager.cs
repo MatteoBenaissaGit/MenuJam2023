@@ -9,7 +9,7 @@ namespace Menu
 {
     public abstract class MenuManager : MonoBehaviour
     {
-        [Header("Menu Manager"), SerializeField] protected MenuAsset MenuAsset;
+        [Header("Menu Manager"), SerializeField] public MenuAsset MenuAsset;
         [SerializeField] protected float AppearTime = 0.25f;
         [SerializeField] protected float DisappearTime = 0.25f;
         [SerializeField] protected List<MenuButton> ButtonList;
@@ -101,10 +101,8 @@ namespace Menu
             IsShown = true;
 
             //set fade to 0
-            MenuAsset.MenuImagesList.ForEach(x => x.DOFade(0,0));
-            MenuAsset.MenuImagesList.ForEach(x => x.DOComplete());
-            MenuAsset.MenuTextList.ForEach(x => x.DOFade(0,0));
-            MenuAsset.MenuTextList.ForEach(x => x.DOComplete());
+            MenuAsset.MenuImagesList.ForEach(x => x.DOKill());
+            MenuAsset.MenuTextList.ForEach(x => x.DOKill());
         
             //fade to 1
             MenuAsset.MenuImagesList.ForEach(x => x.DOFade(1,AppearTime * Random.Range(0.5f,2f)));
@@ -126,8 +124,8 @@ namespace Menu
             IsActive = false;
             
             //complete
-            MenuAsset.MenuImagesList.ForEach(x => x.DOComplete());
-            MenuAsset.MenuTextList.ForEach(x => x.DOComplete());
+            MenuAsset.MenuImagesList.ForEach(x => x.DOKill());
+            MenuAsset.MenuTextList.ForEach(x => x.DOKill());
 
             //fade to 0
             MenuAsset.MenuImagesList.ForEach(x => x.DOFade(0,DisappearTime * Random.Range(0.5f,2f)));
