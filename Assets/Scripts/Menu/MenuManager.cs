@@ -156,21 +156,21 @@ namespace Menu
     
         protected void HandleSelection(bool previous, bool next)
         {
+            //active guard
             if (IsActive == false)
             {
                 return;
             }
-        
-            Input input = InputManager.Instance.Inputs;
-        
+            
+            //pressed guard
             CheckPressed();
             if (HasPressed)
             {
                 return;
             }
 
+            //selection
             int selection = SelectionIndex;
-            
             if (previous)
             {
                 PreviousButton();
@@ -179,16 +179,17 @@ namespace Menu
             {
                 NextButton();
             }
-        
-            if (input.Select && IsActive)
-            {
-                HasPressed = true;
-                ButtonList[SelectionIndex].Select();
-            }
-
             if (selection != SelectionIndex)
             {
                 SetSelected();
+                ButtonList[SelectionIndex].SelectButton();
+            }
+            
+            //select
+            if (InputManager.Instance.Inputs.Select && IsActive)
+            {
+                HasPressed = true;
+                ButtonList[SelectionIndex].PressButton();
             }
         }
 

@@ -9,9 +9,9 @@ namespace Buttons
             base.Awake();
         }
 
-        public override void Select()
+        public override void PressButton()
         {
-            base.Select();
+            base.PressButton();
 
             Sequence sequence = DOTween.Sequence();
             sequence.Append(transform.DOMoveX(transform.position.x - 3f, 0.05f).SetEase(Ease.Linear));

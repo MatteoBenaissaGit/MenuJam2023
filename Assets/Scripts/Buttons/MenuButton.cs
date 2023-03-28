@@ -3,6 +3,7 @@ using DG.Tweening;
 using Menu;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 namespace Buttons
 {
@@ -11,12 +12,13 @@ namespace Buttons
         [SerializeField] protected MenuManager MenuOwner;
         [SerializeField] protected MenuManager MenuToLoad;
 
-        public UnityEvent OnSelect = new UnityEvent();
+        public UnityEvent OnPressed = new UnityEvent();
+        public UnityEvent OnSelected = new UnityEvent();
         public UnityEvent OnNewMenuLoad = new UnityEvent();
 
-        public virtual void Select()
+        public virtual void PressButton()
         {
-            OnSelect.Invoke();
+            OnPressed.Invoke();
             if (MenuToLoad != null)
             {
                 OnNewMenuLoad.Invoke();
@@ -34,6 +36,11 @@ namespace Buttons
                 transform.DOPunchPosition(new Vector3(2, 0, 0), 0.3f);
             }
             SoundManager.Instance.PlaySound(SoundManager.Instance.Select);
+        }
+        
+        public virtual void SelectButton()
+        {
+            OnSelected.Invoke();
         }
     }
 }
