@@ -13,8 +13,10 @@ namespace Menu
         
         private List<VerticalOptionMenuButton> _buttonList = new List<VerticalOptionMenuButton>();
 
-        private void Awake()
+        protected override void Start()
         {
+            base.Start();
+            
             //list
             _buttonList.Clear();
             foreach (MenuButton button in ButtonList)
